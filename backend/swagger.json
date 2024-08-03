@@ -7,8 +7,8 @@
   },
   "servers": [
     {
-      "url": "http://localhost:54321",
-      "description": "Local server"
+      "url": "https://claw-enterprises-assignment-po5s.onrender.com",
+      "description": "Server"
     }
   ],
   "paths": {
@@ -240,7 +240,7 @@
   "components": {
     "securitySchemes": {
       "bearerAuth": {
-        "type": "http",
+        "type": "https",
         "scheme": "bearer",
         "bearerFormat": "JWT"
       }
