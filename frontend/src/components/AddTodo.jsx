@@ -55,6 +55,7 @@ const AddTodo = ({ filterSelected, setFilterSelected }) => {
                 onChange={(e) => {
                   setTask(e.target.value);
                 }}
+                value={task}
                 placeholder="Add new task"
                 className="border px-2 py-2  flex flex-grow xl:max-w-lg lg:max-w-md md:max-w-sm  sm:max-w-xs rounded-md "
               />
