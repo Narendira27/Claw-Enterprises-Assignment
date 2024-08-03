@@ -7,11 +7,11 @@ const AuthMiddleware = async (req, res, next) => {
   const supabase = createClient(supabaseUrl, supaBaseApi);
   const authorization = req.headers.authorization;
   if (!authorization) {
-    return res.json({ msg: "Required Headers Not Found" });
+    return res.status(400).json({ msg: "Required Headers Not Found" });
   }
   const token = authorization.split(" ")[1];
   if (!token) {
-    return res.json({ msg: "JWT not found" });
+    return res.status(400).json({ msg: "JWT not found" });
   }
   const {
     data: { user },
